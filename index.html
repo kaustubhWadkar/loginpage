@@ -3,66 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FABBEC;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .login-container h2 {
-            margin: 0 0 20px;
-            text-align: center;
-        }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .login-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 20px 0 0;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .login-container input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>stage env</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="login-container">
-    <h2>Login</h2>
-    <form action="/login" method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-
-        <input type="submit" value="Login">
-    </form>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="photos/8.jpg" alt="Company Logo" class="company-logo">
+                    
 </div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#systems">Parking Types</a></li>
+                <li><a href="#maintenance">Maintenance</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>testttt stage You Think <span class="highlight">Parking</span> Think <span class="highlight">Gurukrupa Parking</span></h1>
+            <p>24/7 Professional Car Parking System Maintenance &amp; Support</p>
+            <a href="#maintenance" class="cta-btn">Schedule Service</a>
+        </div>
+        <!-- Right-to-Left Moving Photo Carousel -->
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="photos/1.jpeg" alt="Car 1">
+                <img src="photos/2.jpeg" alt="Car 2">
+                <img src="photos/3.jpeg" alt="Car 3">
+                <img src="photos/4.jpeg" alt="Car 4">
+                <img src="photos/5.jpeg" alt="Car 5">
+                <!-- Add more photos as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Thumbnail Slideshow Gallery -->
+    <section id="gallery" class="gallery-section">
+        <h2>Parking Gallery</h2>
+        <div class="slideshow-sidebar-container">
+            <div class="main-slide">
+                <img class="mySlides" src="photos/1.jpeg" alt="Parking Photo 1">
+                <img class="mySlides" src="photos/2.jpeg" alt="Parking Photo 2">
+                <img class="mySlides" src="photos/3.jpeg" alt="Parking Photo 3">
+                <img class="mySlides" src="photos/4.jpeg" alt="Parking Photo 4">
+                <img class="mySlides" src="photos/5.jpeg" alt="Parking Photo 5">
+                <!-- Add more if needed -->
+            </div>
+            <div class="sidebar-thumbnails">
+                <img class="thumbnail" src="photos/1.jpeg" alt="Thumbnail 1" onclick="currentSlide(1)">
+                <img class="thumbnail" src="photos/2.jpeg" alt="Thumbnail 2" onclick="currentSlide(2)">
+                <img class="thumbnail" src="photos/3.jpeg" alt="Thumbnail 3" onclick="currentSlide(3)">
+                <img class="thumbnail" src="photos/4.jpeg" alt="Thumbnail 4" onclick="currentSlide(4)">
+                <img class="thumbnail" src="photos/5.jpeg" alt="Thumbnail 5" onclick="currentSlide(5)">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Service Commitment</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>24/7 Service</h3>
+                <p>Fast response &amp; expert support anytime.<br>
+                Breakdown Helpline: <a href="tel:8007012279">8007012279</a></p>
+            </div>
+            <div class="card">
+                <h3>AMC &amp; Quarterly Servicing</h3>
+                <p>All clients benefit from Annual Maintenance Contracts and regular quarterly service visits for peace of mind.</p>
+            </div>
+            <div class="card">
+                <h3>Expert Technical Team</h3>
+                <p>All servicing is performed by our qualified and authorized professionals, never by unauthorized agencies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="systems" class="system-showcase">
+        <h2>Parking Systems We Maintain</h2>
+        <div class="animated-parking">
+            <div>
+                <img src="photos/1.jpeg" alt="Stack Parking System">
+                <p>Stack Parking</p>
+            </div>
+            <div>
+                <img src="photos/2.jpeg" alt="Puzzle Parking System">
+                <p>Puzzle Parking</p>
+            </div>
+        </div>
+        <p class="note">Only genuine, well-maintained systems ensure top performance. Always get your systems serviced by ParkSync certified engineers.</p>
+    </section>
+
+
+    <section id="support" class="support">
+        <h2>Support &amp; Instructions</h2>
+        <ul>
+            <li>Strictly follow all Do’s and Don’ts during operation and maintenance.</li>
+            <li>Avoid unauthorized servicing to ensure safety and warranty.</li>
+            <li>Email for assistance: <a href="mailto:gurukrupaparking@gmail.com">gurukrupaparking@gmail.com</a></li>
+        </ul>
+    
+
+
+
+    <footer>
+        &copy; 2025 gurukrupaparking@gmail.com. 
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
